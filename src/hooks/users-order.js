@@ -6,7 +6,7 @@ module.exports = (options = {}) => {
   return async (context) => {
     const { app, result, params } = context;
 
-    // if not authenticated; for login
+    // if not authenticated; for login; append data here; like access rights; roles; etc ..
     if (!params.authentication) return context;
 
     // append orders
